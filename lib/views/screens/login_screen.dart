@@ -25,21 +25,15 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 25),
             Container(
-              height: 40,
               width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                color: Colors.yellow.shade900,
-                borderRadius: BorderRadius.circular(5),
-              ),
-              child: Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  print(
+                    'Log IN',
+                  );
+                },
                 child: Text(
                   'Log IN',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                    letterSpacing: 4,
-                  ),
                 ),
               ),
             ),
